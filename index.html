@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <script src="js/app.js" defer></script>
+        <title>Flash Card App</title>
+    </head>
+    <body onload="getRandomStack()">
+        <h1 class="title">Welcome to the Flash Card App</h1>
+        <div class="first">
+            <div>
+                <h3 class="qtn">Question</h3>
+            </div>
+            <div>
+                <h3 class="ans">Answer</h3>
+            </div>
+            <div class="button">
+                <button class="check">Check Answer</button>
+                <button class="next">Next Question</button>
+                <button class="add">Add New Card</button>
+            </div>
+        </div>
+        <div class="second">
+            <div class="form">
+                <form>
+                    Question:
+                    <input type="text" id="question"><br>
+                    Answer: 
+                    <input type="text" id="answer" ><br>
+                </form>
+            </div>
+            <div class="button">
+                <button class="save">Save Card</button>
+            <button class="done">Close</button>
+            </div>
+        </div>
+    </body>
+</html>

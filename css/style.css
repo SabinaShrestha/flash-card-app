@@ -1,0 +1,54 @@
+.title {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.qtn {
+  border: solid 5px red;
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.ans {
+  border: solid 5px blue;
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  margin-top: 50px;
+  display: none;
+}
+
+.button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* .form {
+  text-align: center;
+  margin-top: 50px;
+} */
+
+input {
+  margin-top: 20px;
+}
+
+.second {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
