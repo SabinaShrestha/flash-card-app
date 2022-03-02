@@ -8,12 +8,27 @@ const save = document.querySelector('.save');
 const done = document.querySelector('.done');
 const first = document.querySelector('.first');
 const second = document.querySelector('.second');
+const message = document.getElementById("msg");
 
 const stack = [
     { question: "HTML", answer: "Hyper Text Markup Language" },
     { question: "CSS", answer: "Cascading Style Sheet" },
     { question: "JS", answer: "JavaScript" }
 ]
+
+function fadeOutEffect() {
+    var fadeTarget = message;
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.1;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, 200);
+}
 
 function getRandomStack() {
     randomStack = stack[Math.floor(Math.random() * stack.length)]
@@ -27,6 +42,8 @@ save.addEventListener('click', function() {
     stack.push({question: qtn, answer: ans})
     document.querySelector('#question').value = '';
     document.querySelector('#answer').value = '';
+    fadeOutEffect();
+    message.style.removeProperty('opacity');
 })
 
 done.addEventListener('click', function() {
